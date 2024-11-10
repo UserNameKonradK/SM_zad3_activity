@@ -168,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
             int resultMessegeId = 0;
             if (answerWasShown) {
                 resultMessegeId = R.string.answer_was_shown;
+                isAnswered[currentIndex] = true;
                 Toast.makeText(this, resultMessegeId, Toast.LENGTH_SHORT).show();
             } else {
                 if (!isAnswered[currentIndex]) {
